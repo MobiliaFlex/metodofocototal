@@ -1,0 +1,326 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styles */
+.header {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Hero section */
+.hero {
+  background-color: #f0f4ff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+.offer-ends {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.countdown {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Pricing section */
+.pricing {
+  padding: 50px 0;
+  background-color: white;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.pricing-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.popular {
+  border: 2px solid #10b981;
+  transform: scale(1.05);
+}
+
+.popular:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.popular-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #10b981;
+  color: white;
+  padding: 5px 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-bottom-left-radius: 10px;
+}
+
+.card-header {
+  padding: 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-header h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #1e3a8a;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.currency {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.period {
+  font-size: 0.9rem;
+  color: #666;
+  margin-left: 5px;
+}
+
+.card-body {
+  padding: 30px 20px;
+}
+
+.features {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.features li {
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af;
+}
+
+.btn-popular {
+  background-color: #10b981;
+  color: white;
+}
+
+.btn-popular:hover {
+  background-color: #059669;
+}
+
+/* Testimonials section */
+.testimonials {
+  padding: 50px 0;
+  background-color: #f0f4ff;
+}
+
+.testimonials h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1e3a8a;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-content {
+  margin-bottom: 20px;
+}
+
+.testimonial-content p {
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.author-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #1e3a8a;
+}
+
+.author-info p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Guarantee section */
+.guarantee {
+  padding: 50px 0;
+  background-color: white;
+}
+
+.guarantee-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 2px dashed #1e3a8a;
+  border-radius: 10px;
+}
+
+.guarantee-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+.guarantee-content p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* CTA section */
+.cta {
+  padding: 70px 0;
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pricing-grid, .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .popular {
+    transform: none;
+  }
+  
+  .popular:hover {
+    transform: translateY(-5px);
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .hero h2, .testimonials h2, .guarantee-content h2, .cta h2 {
+    font-size: 1.5rem;
+  }
+}
